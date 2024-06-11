@@ -1,11 +1,21 @@
+/**Imports from react */
 import React, { useState, useEffect } from "react";
+
+/**Imports from apolle client */
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+
+/**Imports from react router dom*/
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+/**Imports from mui */
 import { CssBaseline, ThemeProvider } from "@mui/material";
+
+/**project components*/
 import BookListPage from "./components/BookListPage";
 import ReadingListPage from "./components/ReadingListPage";
 import theme from "./theme";
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
+/**Apollo client */
 const client = new ApolloClient({
   uri: "http://localhost:4000/",
   cache: new InMemoryCache(),
@@ -37,7 +47,6 @@ const App = () => {
   }, []);
 
   const [readingList, setReadingList] = useState([]);
-  const [alert, setAlert] = useState({ open: false, message: "" });
 
   const addBookToReadingList = (book) => {
     if (!readingList.some((b) => b.title === book.title)) {
@@ -54,7 +63,7 @@ const App = () => {
   };
 
   const showAlert = (message) => {
-    setAlert({ open: true, message });
+    console.log(message);
   };
 
   return (

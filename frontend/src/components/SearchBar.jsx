@@ -1,4 +1,7 @@
+/**Import from react */
 import React from "react";
+
+/**Imports from mui */
 import {
   TextField,
   Autocomplete,
@@ -9,6 +12,8 @@ import {
   CardMedia,
 } from "@mui/material";
 import PropTypes from "prop-types";
+
+/**Search component */
 
 const SearchBar = ({ searchQuery, setSearchQuery, books, handleAddBook }) => {
   return (

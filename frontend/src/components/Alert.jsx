@@ -1,7 +1,9 @@
+/**Imports*/
 import React, { useEffect } from "react";
 import { Snackbar, Alert as MuiAlert } from "@mui/material";
 import PropTypes from "prop-types";
 
+/**Alert component*/
 const Alert = ({ alert, setAlert }) => {
   useEffect(() => {
     if (alert.open) {

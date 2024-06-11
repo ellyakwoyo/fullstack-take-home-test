@@ -1,3 +1,4 @@
+/**Imports*/
 import React, { useState } from "react";
 import {
   Container,
@@ -17,6 +18,7 @@ import SearchBar from "./SearchBar";
 import Alert from "./Alert";
 import AddIcon from "@mui/icons-material/Add";
 
+/**Booking list page component */
 const BookListPage = ({ books, addBookToReadingList, showAlert }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBooks, setFilteredBooks] = useState([]);

@@ -9,7 +9,6 @@ I want to extend my heartfelt thanks to the team for giving me the opportunity t
 
 The project has two pages, Books list and reading list
 ### Folder structure
-![File structure](./folder-structure.png)
 
 ### Run Frontend
 

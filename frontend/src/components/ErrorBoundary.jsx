@@ -1,6 +1,8 @@
+ /**Imports*/
 import React, { Component } from "react";
 import { Typography } from "@mui/material";
 
+/**Error boundary */
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);

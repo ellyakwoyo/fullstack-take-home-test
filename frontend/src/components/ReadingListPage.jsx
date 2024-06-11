@@ -1,3 +1,4 @@
+/**Imports */
 import React, { useState } from "react";
 import { Container, Typography, Button, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +7,7 @@ import ReadingList from "./ReadingList";
 import Alert from "./Alert";
 import ErrorBoundary from "./ErrorBoundary";
 
+/**Reading page component */
 const ReadingListPage = ({ readingList, removeBookFromReadingList }) => {
   const [alert, setAlert] = useState({ open: false, message: "" });
   const navigate = useNavigate();
