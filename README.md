@@ -9,7 +9,9 @@ I want to extend my heartfelt thanks to the team for giving me the opportunity t
 
 The project has two pages, Books list and reading list
 ### Folder structure
-![File structure](./folder-structure.png)
+![folder-structure](https://github.com/ellyakwoyo/fullstack-take-home-test/assets/85440021/5ce0e2e7-17aa-4242-a091-a422dd00ba29)
+
+
 
 ### Run Frontend
 
