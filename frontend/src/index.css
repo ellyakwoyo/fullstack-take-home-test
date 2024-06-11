@@ -1,0 +1,28 @@
+
+
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  color: #335C6E;
+}
+
+.container {
+  padding: 20px;
+}
+
+h3, h4 {
+  color: #5ACCCC;
+}
+
+button {
+  font-family: 'Mulish', sans-serif;
+}
+
+.book-list-container {
+  max-height: 400px;
+  overflow-y: auto;
+  width: 50%;
+  margin: 0
+}
