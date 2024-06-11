@@ -9,37 +9,7 @@ I want to extend my heartfelt thanks to the team for giving me the opportunity t
 
 The project has two pages, Books list and reading list
 ### Folder structure
-full-stack-take-home-test
-                |
-                ├── backend/
-                |
-                └── frontend/
-                    |
-                    ├── public/
-                    │   │   
-                    │   ├── index.html
-                    │   └── ...other public files
-                    ├── src/
-                    │   ├── assets/
-                    │   │   ├── image1.webp
-                    │   │   ├── image2.webp
-                    │   │   └── ...other images
-                    │   ├── components/
-                    │   │   ├── Alert.js
-                    │   │   ├── BookList.js
-                    │   │   ├── ErrorBoundary.js
-                    │   │   ├── ReadingList.js
-                    │   │   ├── SearchBar.js
-                    │   │   └── ...other components
-                    │   ├── App.js
-                    │   ├── index.js
-                    │   └── ...other files
-                    ├── .gitignore
-                    ├── package.json
-                    ├── README.md
-                    └── ...other config files
-
-
+![File structure](./folder-structure.png)
 
 ### Run Frontend
 
