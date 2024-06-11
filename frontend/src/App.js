@@ -22,8 +22,10 @@ const client = new ApolloClient({
 });
 
 const App = () => {
+
   const [books, setBooks] = useState();
   useEffect(() => {
+    console.log("Test");
     client
       .query({
         query: gql`
@@ -71,7 +73,7 @@ const App = () => {
       <CssBaseline />
       <Router>
         <Routes>
-          {books && (
+         
             <Route
               path="/"
               element={
@@ -82,7 +84,7 @@ const App = () => {
                 />
               }
             />
-          )}
+          
           <Route
             path="/reading-list"
             element={

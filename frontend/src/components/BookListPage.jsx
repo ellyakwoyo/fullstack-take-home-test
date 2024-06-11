@@ -21,21 +21,11 @@ import AddIcon from "@mui/icons-material/Add";
 /**Booking list page component */
 const BookListPage = ({ books, addBookToReadingList, showAlert }) => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredBooks, setFilteredBooks] = useState([]);
   const [alert, setAlert] = useState({ open: false, message: "" });
   const navigate = useNavigate();
 
   const handleSearch = (query) => {
     setSearchQuery(query);
-    if (query) {
-      setFilteredBooks(
-        books.filter((book) =>
-          book.title.toLowerCase().includes(query.toLowerCase())
-        )
-      );
-    } else {
-      setFilteredBooks([]);
-    }
   };
 
   const handleAddBook = (book) => {
@@ -88,6 +78,11 @@ const BookListPage = ({ books, addBookToReadingList, showAlert }) => {
           handleAddBook={handleAddBook}
         />
       </Box>
+      {books.length < 1 && (
+        <Typography variant="h6" align="center">
+          There are no books.
+        </Typography>
+      )}
       <Grid container spacing={2} style={{ marginTop: "20px" }}>
         {books.map((book, index) => (
           <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
@@ -105,7 +100,10 @@ const BookListPage = ({ books, addBookToReadingList, showAlert }) => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <IconButton color="primary" onClick={() => handleAddBook(book)}>
+                <IconButton
+                  color="primary"
+                  onClick={() => handleAddBook(book)}
+                >
                   <AddIcon />
                 </IconButton>
               </CardActions>
